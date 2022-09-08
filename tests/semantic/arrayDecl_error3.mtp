@@ -1,0 +1,11 @@
+(* Declare an array with variable index *)
+
+
+var index : integer;
+begin
+
+	var something : array(index) of integer;
+	begin
+	end
+
+end.

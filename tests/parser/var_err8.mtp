@@ -1,0 +1,8 @@
+(* variable section start *)
+
+var test: integer;
+
+begin
+
+(*missing end*)
+.

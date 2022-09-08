@@ -1,0 +1,9 @@
+(*Test whether one can negate a string or not*)
+const string := 'Hello, World';
+
+var something : integer;
+
+begin
+	if (not string) then
+	   write('Failure');
+end.

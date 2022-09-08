@@ -1,0 +1,8 @@
+Syntax Error: line 3:
+Unexpected token (TOK_RPAREN, ')'), likely missing a(n)  
+  'TOK_KEY_THEN' or
+  'TOK_LPAREN' or
+Possibly due to malformed or missing:
+  Non-terminal: 'Constant' or
+  Non-terminal: 'Expression' or
+  Non-terminal: 'Variable'

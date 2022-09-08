@@ -1,0 +1,6 @@
+begin
+	(*if statement with no if, just else*)
+	else
+		sample := 1;
+end
+.

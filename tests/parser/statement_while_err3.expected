@@ -1,0 +1,9 @@
+Syntax Error: line 4:
+Unexpected token (TOK_NUM, '10'), likely missing a(n)  
+  'TOK_SEMICOLON' or
+Possibly due to malformed or missing:
+  Non-terminal: 'If Statement' or
+  Non-terminal: 'While Statement' or
+  Non-terminal: 'Write Statement' or
+  Non-terminal: 'Read Statement' or
+  Non-terminal: 'Case'

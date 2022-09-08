@@ -1,0 +1,9 @@
+(* variable section start *)
+
+(* missing id*)
+var  : integer;
+
+begin
+
+end
+.

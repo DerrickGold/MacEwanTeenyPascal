@@ -1,0 +1,17 @@
+begin
+
+	(* while statement *)
+	while 10 do
+		sample := sample + 1;
+		
+	(* while statement with complex condition *)
+	while (sample > 20 * 3) do
+		sample := sample - 1;
+
+	(* while statement with block statement *)
+	while (something) do begin
+		something := something - (3 * sample);
+		sample := sample + 1;
+	end
+end
+.

@@ -1,0 +1,7 @@
+(*Testing multiply operator type checks*)
+const test := 1;
+var a,b : integer;
+
+begin
+	a := b * test div 3
+end.

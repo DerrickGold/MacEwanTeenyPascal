@@ -1,0 +1,10 @@
+begin
+
+	case something of
+	     1: something := 2
+	     ;
+	     2,3,4:
+		something := 3
+	end
+
+end.

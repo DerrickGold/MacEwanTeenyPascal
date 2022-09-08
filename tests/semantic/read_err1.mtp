@@ -1,0 +1,6 @@
+(*Read statement with constant*)
+const buf := 0;
+
+begin
+	read(buf);
+end.

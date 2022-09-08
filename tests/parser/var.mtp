@@ -1,0 +1,22 @@
+(* variable section start *)
+var test : integer;
+
+(* should still be in variable section *)
+floop : integer;
+
+(*variable list declaration *)
+one,two,three : integer;
+
+(* array declaration *)
+something : array(20) of integer;
+
+(* list array declaration *)
+s1, s2, s3, s4 : array(100) of integer;
+
+(* array declaration with variable *)
+zthing : array(something) of integer;
+
+begin
+
+end
+.

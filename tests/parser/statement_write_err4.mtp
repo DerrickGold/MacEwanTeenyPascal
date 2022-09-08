@@ -1,0 +1,6 @@
+begin
+	(*write statement: *)
+	write(something something2)
+
+end
+.

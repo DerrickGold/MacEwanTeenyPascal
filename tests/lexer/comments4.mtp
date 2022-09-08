@@ -1,0 +1,7 @@
+(* regular comment
+that spans
+a bunch of
+lines (*some other comment too
+
+should return an end file token!
+*)

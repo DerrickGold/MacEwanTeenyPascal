@@ -1,0 +1,14 @@
+begin
+	(*read statement*)
+	read(somevar);
+
+	(*read statement, multiple variables*)
+	read(one, two, three, four);
+
+	(*read statement, with variable type 2*)
+	read(something (2 + 3) );
+
+	(*read statement, with multiple type 2 variables*)
+	read(something(2*3), two(10 * 3 + 3 div 1));
+end
+.

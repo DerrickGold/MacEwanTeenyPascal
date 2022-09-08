@@ -1,0 +1,11 @@
+1, TOK_KEY_IF, if
+1, TOK_ID, identifier
+1, TOK_EQ, =
+1, TOK_EQ, =
+1, TOK_STR, 'string'
+1, TOK_KEY_AND, and
+1, TOK_ID, id2
+1, TOK_EQ, =
+1, TOK_EQ, =
+1, TOK_NUM, 567
+1, TOK_ENDFILE,

@@ -1,0 +1,5 @@
+Syntax Error: line 3:
+Unexpected token (TOK_KEY_THEN, 'then'), likely missing a(n)  
+  'TOK_RPAREN' or
+Possibly due to malformed or missing:
+  Non-terminal: 'Condition'

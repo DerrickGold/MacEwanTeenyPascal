@@ -1,0 +1,6 @@
+(*Attempt multiplying with string literal*)
+var a : integer;
+
+begin
+	a := 1 * 'error' div 3
+end.

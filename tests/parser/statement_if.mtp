@@ -1,0 +1,47 @@
+begin
+	(*if statement with simple condition*)
+	if (10) then
+		sample := 0;
+
+	(*if statement with multiply op expression*)
+	if (10 * 20) then
+		sample := 1;
+
+	(*if statement with binary op*)
+	if (10 * 20 + 10 div 30) then
+		sample := 2;
+
+	(*if statement with binary op*)
+	if (10 * 20 + 10 div 30 > 20 mod 2) then
+		sample := 3;
+
+
+	(*if statement with multiple statements in block*)
+	if (10) then begin
+		sample2 := 0;
+		sample := 4
+	end;
+
+	(*if statement with else statement*)
+	if (10) then
+		sample := 5
+	else
+		sample := 6;
+
+	(*if else using blocks*)
+	if (10) then begin
+		sample := 7;
+		sample2 := 1;
+	end
+	else begin
+		sample := 8;
+		sample2 := 2;
+	end;
+
+	(*if without parenthesis*)
+	if 10 * 20 = 220 - 20 then
+		sample := 9
+
+
+end
+.

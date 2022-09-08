@@ -1,0 +1,27 @@
+
+Semantically Corrected AST
+[Head] (Block, Block Statement) 
+Symbol Table:============================================================================:
+Identifiers    |Stack Offset  |Type                 |Value                           
+-----------------------------------------------------------------------------------------
+someval        |NONE          |Int, Con             |100                             
+size           |520           |Int, Var             |                                
+someArry       |0             |Int, Ref, Var, Arr   |someval...                      
+array2         |400           |Int, Var, Arr        |30                              
+=======================================================================Depth 0   :Size 524 
+    [Child] (Const Section) 
+        [Child] (Const Declaration) 
+            [Child] 1, TOK_ID, someval, (Literal) 
+            [Child] 1, TOK_NUM, 100, (Literal) 
+    [Child] (Variable Section) 
+        [Child] (Variable Declaration, Variable List) 
+            [Child] 2, TOK_ID, someArry, (Literal) 
+            [Child] 2, TOK_ID, someval, (Type, Constant, Array, Integer) 
+        [Sibling] (Variable Declaration, Variable List) 
+            [Child] 3, TOK_ID, array2, (Literal) 
+            [Child] 3, TOK_NUM, 30, (Type, Constant, Array, Integer) 
+        [Sibling] (Variable Declaration, Variable List) 
+            [Child] 4, TOK_ID, size, (Literal) 
+            [Child] 4, TOK_KEY_INTEGER, integer, (Type, Integer) 
+    [Child] (Statement List) 
+        [Child] (Null Statement) 

@@ -1,0 +1,6 @@
+begin
+	(*Incomplete multiplying operator*)
+	(*assignment statement: with terms*)
+	something := 10 * ;
+end
+.

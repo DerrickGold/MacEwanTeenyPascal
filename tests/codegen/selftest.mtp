@@ -1,0 +1,367 @@
+(*
+ * Self test mtp program:
+ *      Tests the implementations of language
+ *
+ *      The only way this test can successfully pass
+ *      is for the language to be fully implemented
+ *      or by some random act of solar flare mucking
+ *      the computer up into thinking it passed.
+ * 
+ *)
+const success := 'Success';
+      fail := 'Fail';
+      varAssign := 'variable assignment';
+      greater := 'greater than';
+      lesser := 'less than';
+      gte := 'greater than equal';
+      lte := 'less than equal';
+      mulMsg := 'multiply';
+      divMsg := 'division';
+      shlMsg := 'shift left';
+      shrMsg := 'shift right';
+      modMsg := 'modulo';
+      addMsg := 'addition';
+      subMsg := 'subtraction';
+      orMsg  := 'or';
+      andMsg := 'and';
+      switch := 'case statement';
+      scope := 'scope testing';
+      arrayMsg := 'array assignment';
+      arrayAccess := 'array access';
+var a, b, c : integer;
+
+begin
+
+   (*test writing first since it'll be the main output*)
+   write('Success literal string written');
+   write(success, 'const declared string written');
+
+  (*test variable assignment and if statement equality*)
+  a := 3;
+  if (a = 3) then
+    write(success, varAssign, a, 3)
+  else
+    write(fail, varAssign, a, 3)
+  ;
+
+  c := -5;
+  if (c = -5) then
+    write(success, varAssign, a, -5)
+  else
+    write(fail, varAssign, a, -5)
+  ;
+
+  (*test greater than comparison*)
+  if (a > 0) then
+     write(success, greater, a, 0)
+  else
+     write(fail, greater, a, 0)
+  ;
+
+  (*test less than comparison*)
+  if (a < 4) then
+        write(success, lesser, a, 4)
+  else
+    write(fail, lesser, a, 4)
+  ;
+
+  (* greater than equal *)
+  if (a >= a) then
+        write(success, gte, a, a)
+  else
+    write(fail, gte, a, a)
+  ;
+
+  if (a >= 0) then
+        write(success, gte, a, 0)
+  else
+    write(fail, gte, a, 0)
+  ;
+
+
+  (* less than equal *)
+  if (a <= a) then
+  	write(success, lte, a, a)
+  else
+    write(fail, lte, a, a)
+  ;
+
+  if (a <= 100) then
+  	write(success, lte, a, 100)
+  else
+    write(fail, lte, a, 100)
+  ;  
+
+
+  (* test some math stuff *)
+  b := 2;
+
+  if (2 * 2 = 4) then
+     write(success, mulMsg, 2, 2)
+  else
+     write(fail, mulMsg, 2, 2)
+  ;
+
+  if (a * b = 6) then
+    write(success, mulMsg, a, b)
+  else
+     write(fail, mulMsg, a, b)
+  ;
+
+
+  if (6 div b = a) then
+     write(success, divMsg, 6, b)
+  else
+     write(fail, divMsg, 6, b)
+  ;
+
+  if (12 div 2 = 6) then
+     write(success, divMsg, 12, 2)
+  else
+     write(fail, divMsg, 12, 2)
+  ;
+
+
+  if (1 shl 8 = 256) then
+     write(success, shlMsg, 1, 8)
+  else
+     write(fail, shlMsg, 1, 8)
+  ;
+
+  if (a shl b = 12) then
+     write(success, shlMsg, a, b)
+  else
+     write(fail, shlMsg, a, b)
+  ;
+
+
+  if (256 shr 8 = 1) then
+     write(success, shrMsg, 256, 8)
+  else
+     write(fail, shrMsg, 256, 8)
+  ;
+
+  if (256 shr a = 32) then
+     write(success, shrMsg, 256, a)
+  else
+     write(fail, shrMsg, 256, a)
+  ;
+
+  if (15 mod 2 = 1) then
+     write(success, modMsg, 15, 2)
+  else
+     write(fail, modMsg, 15, 2)
+  ;
+
+  if (15 mod a = 0) then
+     write(success, modMsg, 15, a)
+  else
+     write(fail, modMsg, 15, a)
+  ;
+
+
+  if ( a + b = 5) then
+     write(success, addMsg, a, b)
+  else
+     write(fail, addMsg, a, b)
+  ;
+
+  if ( 3789 + 90853 = 94642) then
+     write(success, addMsg, 3789, 90853)
+  else
+     write(fail, addMsg, 3789, 90853)
+  ;
+
+  if ( 3789 + (-90853) = -87064) then
+     write(success, addMsg, 3789, -90853)
+  else
+     write(fail, addMsg, 3789, -90853)
+  ;
+
+
+  if (a - b = 1) then
+     write(success, subMsg, a, b)
+  else
+     write(fail, subMsg, a, b)
+  ;
+
+  if (a - (-b) = 5) then
+     write(success, subMsg, a, (-b))
+  else
+     write(fail, subMsg, a, (-b))
+  ;
+
+  if (a - not b = a) then
+     write(success, subMsg, a, not b)
+  else
+     write(fail, subMsg, a, not b)
+  ;
+
+
+  (* test some ands and ors*)
+  if (a or not b) then
+     write(success, orMsg, a, not b)
+  else
+     write(fail, orMsg, a, not b);
+  ;
+
+  if (0 or not b or not a or 1) then
+     write(success, orMsg, 0, not b, not a, 1)
+  else
+     write(fail, orMsg, 0, not b, not a, 1);
+  ;
+
+  (*this one should fail *)
+  if (0 or not b or not a or not 1) then
+     write(fail, orMsg, 0, not b, not a, not 1)
+  else
+     write(success, orMsg, 0, not b, not a, not 1)
+  ;
+
+  if (1 and 1) then
+     write(success, andMsg, 1, 1)
+  else
+     write(fail, andMsg, 1, 1)
+  ;
+
+  if (1 and b and a) then
+     write(success, andMsg, 1, b, a)
+  else
+     write(fail, andMsg, 1, b, a);
+  ;
+
+  (*this one should fail*)
+  if (0 and 1 and 2) then
+     write(fail, andMsg, 0, 1, 2)
+  else
+     write(success, andMsg, 0, 1, 2)
+  ;
+
+  (*testing case statements and while statements*)
+  c := 5;
+
+  while (c >= 0) do begin
+    case (c) of 
+      5: write(success, switch, c);
+      9: write(fail, switch, 'out of loop');
+      3: write(success, switch, c)
+    else
+	write(success, switch, 'default case', c)
+    end;
+    c := c - 1;
+  end;
+
+  (*test values outside of case range*)
+  c := -3;
+  while (c <= 10) do begin
+    case (c) of 
+      5: write(success, switch, c);
+      9: write(success, switch, c);
+      3: write(success, switch, c)
+    else
+	write(success, switch, 'default case', c)
+    end;
+    c := c + 1;
+  end;
+
+  write(c);
+  
+  (*try some scope testing*)
+  a := 77;
+
+  var a : integer;
+  begin
+	a := 94;
+	write(success, scope, a, 94);
+  end;
+
+  if (a = 77) then
+     write(success, scope, a, 77)
+  else
+     write(fail, scope, a, 77)
+  ;
+
+  (*nested scopes referencing parent scope*)
+  begin
+	begin
+		if (a = 77) then
+			write(success, scope, a, 77)
+		else
+			write(fail, scope, a, 77)
+		;
+	end;
+  end;
+
+
+  var a : integer;
+  begin
+	a := 1001;
+
+	if (a = 1001) then
+	  write(success, scope, a, 1001)
+	else
+          write(fail, scope, a, 1001)
+	;
+
+	var b : integer;
+	begin
+		if (a = 1001) then
+		   write(success, scope, a, 1001)
+		else
+		   write(fail, scope, a, 1001)
+		;
+
+		b := 200;
+		if (b = 200) then
+		   write(success, scope, b, 200)
+		else
+		   write(fail, scope, b, 200)
+		;
+
+		(* one more scope level just to be sure*)
+		begin
+			if (a = 1001) then
+		   		write(success, scope, a, 1001)
+			else
+		   		write(fail, scope, a, 1001)
+			;
+		end;
+	end;
+   end;
+
+
+   (*try some array indexing *)
+   var someArray : array(20) of integer;
+       i : integer;
+   begin
+	(*go through the array once to assign it*)
+	i := 0;
+	while ( i < 20 ) do begin
+	      someArray(i) := i;
+	      i := i + 1;
+	end;
+	
+	(*go through again to make sure all values are present*)
+	i := 0;
+	while ( i < 20 ) do begin
+	      if (someArray(i) = i) then
+	      	      write(success, arrayMsg, someArray(i))
+	      else
+		write(fail, arrayMsg, someArray(i))
+	      ;
+		      
+	      i := i + 1;		      
+	end;
+
+	if (someArray(1) + someArray(2) = someArray(3)) then
+	   write(success, arrayAccess, someArray(0), someArray(1), someArray(3))
+	else
+	   write(fail, arrayAccess, someArray(0), someArray(1), someArray(3))
+	;
+
+   end;
+
+
+
+
+end.

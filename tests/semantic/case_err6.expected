@@ -1,0 +1,27 @@
+
+Semantic Warning [line 6]:
+	'else' condition using implicit Null Statment.
+Semantically Corrected AST
+[Head] (Block, Block Statement) 
+Symbol Table:============================================================================:
+Identifiers    |Stack Offset  |Type                 |Value                           
+-----------------------------------------------------------------------------------------
+a              |0             |Int, Var             |                                
+test           |NONE          |Int, Con             |1                               
+=======================================================================Depth 0   :Size 4   
+    [Child] (Const Section) 
+        [Child] (Const Declaration) 
+            [Child] 1, TOK_ID, test, (Literal) 
+            [Child] 1, TOK_NUM, 1, (Literal) 
+    [Child] (Variable Section) 
+        [Child] (Variable Declaration, Variable List) 
+            [Child] 2, TOK_ID, a, (Literal) 
+            [Child] 2, TOK_KEY_INTEGER, integer, (Type, Integer) 
+    [Child] (Statement List) 
+        [Child] (Case Statement) Case Count: 1
+            [Child] 6, TOK_ID, a, (Variable) 
+            [Child] (Case List, Case) 
+                [Child] 7, TOK_ID, test, (Const List, Constant, Integer) 
+                [Child] (Write Statement) Arguments: 1
+                    [Child] 7, TOK_STR, 'Hello', (Constant, String) 
+            [Child] (Null Statement) 

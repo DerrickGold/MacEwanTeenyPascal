@@ -1,0 +1,7 @@
+(* Testing for duplicate const declarations*)
+const size := 10;
+      size := 2;
+
+
+begin
+end.

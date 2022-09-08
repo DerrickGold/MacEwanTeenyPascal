@@ -1,0 +1,9 @@
+Syntax Error: line 3:
+Unexpected token (TOK_ID, 'something'), likely missing a(n)  
+  'TOK_LPAREN' or
+Possibly due to malformed or missing:
+  Non-terminal: 'If Statement' or
+  Non-terminal: 'While Statement' or
+  Non-terminal: 'Write Statement' or
+  Non-terminal: 'Read Statement' or
+  Non-terminal: 'Case'

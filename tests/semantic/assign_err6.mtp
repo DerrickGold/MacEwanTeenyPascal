@@ -1,0 +1,8 @@
+(*Try an assignment to a constant int*)
+const test := 'error';
+var a, b : integer;
+
+begin
+
+	test := a + b
+end.

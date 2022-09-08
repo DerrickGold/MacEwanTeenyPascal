@@ -1,0 +1,9 @@
+(* variable section start *)
+
+(* missing variable type*)
+var test : ;
+
+begin
+
+end
+.

@@ -1,0 +1,60 @@
+
+Semantically Corrected AST
+[Head] (Block, Block Statement) 
+Symbol Table:============================================================================:
+Identifiers    |Stack Offset  |Type                 |Value                           
+-----------------------------------------------------------------------------------------
+two            |NONE          |Int, Con             |2                               
+a              |0             |Int, Var             |                                
+c              |8             |Int, Var             |                                
+b              |4             |Int, Var             |                                
+one            |NONE          |Int, Con             |1                               
+ar2            |92            |Int, Var, Arr        |20                              
+ar1            |12            |Int, Var, Arr        |20                              
+=======================================================================Depth 0   :Size 172 
+    [Child] (Const Section) 
+        [Child] (Const Declaration) 
+            [Child] 1, TOK_ID, one, (Literal) 
+            [Child] 1, TOK_NUM, 1, (Literal) 
+        [Sibling] (Const Declaration) 
+            [Child] 2, TOK_ID, two, (Literal) 
+            [Child] 2, TOK_NUM, 2, (Literal) 
+    [Child] (Variable Section) 
+        [Child] (Variable Declaration, Variable List) 
+            [Child] 4, TOK_ID, a, (Literal) 
+            [Sibling] 4, TOK_ID, b, (Literal) 
+            [Sibling] 4, TOK_ID, c, (Literal) 
+            [Child] 4, TOK_KEY_INTEGER, integer, (Type, Integer) 
+        [Sibling] (Variable Declaration, Variable List) 
+            [Child] 5, TOK_ID, ar1, (Literal) 
+            [Sibling] 5, TOK_ID, ar2, (Literal) 
+            [Child] 5, TOK_NUM, 20, (Type, Constant, Array, Integer) 
+    [Child] (Statement List) 
+        [Child] (Assign Statement) 
+            [Child] 9, TOK_ID, a, (Variable) 
+            [Child] 9, TOK_ID, one, (Constant, Integer) 
+        [Sibling] (Assign Statement) 
+            [Child] 10, TOK_ID, b, (Variable) 
+            [Child] 10, TOK_ID, a, (Variable) 
+        [Sibling] 11, TOK_ASSIGN, :=, (Assign Statement) 
+            [Child] 11, TOK_ID, ar1, (Variable, Array) 
+                [Child] 11, TOK_ID, two, (Constant, Integer) 
+            [Child] 11, TOK_ID, c, (Variable) 
+        [Sibling] 12, TOK_ASSIGN, :=, (Assign Statement) 
+            [Child] 12, TOK_ID, ar2, (Variable, Array) 
+                [Child] 12, TOK_NUM, 1, (Constant, Integer) 
+            [Child] 12, TOK_ID, ar1, (Variable, Array) 
+                [Child] 12, TOK_ID, two, (Constant, Integer) 
+        [Sibling] (Assign Statement) 
+            [Child] 19, TOK_ID, a, (Variable) 
+            [Child] 19, TOK_MINUS, -, (Unary Operator) 
+                [Child] 19, TOK_ID, two, (Constant, Integer) 
+        [Sibling] 20, TOK_ASSIGN, :=, (Assign Statement) 
+            [Child] 20, TOK_ID, ar2, (Variable, Array) 
+                [Child] 20, TOK_ID, a, (Variable) 
+            [Child] 20, TOK_NUM, 3, (Constant, Integer) 
+        [Sibling] 21, TOK_ASSIGN, :=, (Assign Statement) 
+            [Child] 21, TOK_ID, ar2, (Variable, Array) 
+                [Child] 21, TOK_MINUS, -, (Unary Operator) 
+                    [Child] 21, TOK_ID, a, (Variable) 
+            [Child] 21, TOK_NUM, 4, (Constant, Integer) 

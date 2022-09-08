@@ -1,0 +1,12 @@
+begin
+	(*missing else*)
+	case (something) of
+	first:
+		s := 0;
+	second:
+		s := 1
+	
+		s := 99
+	end
+end
+.

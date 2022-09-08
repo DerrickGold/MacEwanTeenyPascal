@@ -1,0 +1,10 @@
+(*While statements with non-Boolean conditions*)
+const false := 'false';
+var a, b : integer;
+
+begin
+	while a <> false do
+	      a := a + 1
+	;
+
+end.

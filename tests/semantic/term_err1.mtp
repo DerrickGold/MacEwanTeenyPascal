@@ -1,0 +1,7 @@
+(*Attempt multiplying with string constant*)
+const test := 'error';
+var a : integer;
+
+begin
+	a := 1 * test div 3
+end.

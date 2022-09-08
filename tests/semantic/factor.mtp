@@ -1,0 +1,12 @@
+(*
+ * Testing factors, the only case a factor really
+ * arises, is when the not operator is used
+ *)
+const test := 1;
+var a, b : integer;
+
+begin
+	a := test;
+	b := a;
+	b := 1
+end. 

@@ -1,0 +1,10 @@
+(*Try multiplying an integer with a string*)
+const string := 'Hello, World';
+
+var something : integer;
+    result : integer;
+
+begin
+	something := 1;
+	result := string * something;
+end.

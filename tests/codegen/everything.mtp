@@ -1,0 +1,201 @@
+const string := 'Hello, World';
+var a, b, c : integer;
+    things : array(20) of integer;
+
+begin
+
+	(* Try some variable assignments*)
+	things(0) := -999;
+	things(1) := 1111;
+	c := -1;
+	write(c);
+	b := 2;
+	write(b);
+	a := b * c * 3;
+	write(a);
+	write(c);	
+	(*make sure arrays haven't overwritten previous entries*)
+	things(2) := a;
+	write(things(2));
+	write(things(0));
+	write(things(1));
+
+	(* try multi value writing *)
+	write (things(0), things(1), things(2));
+
+	write(a);
+	(* test out division *)
+	a := a div b;
+	write(a);
+
+	(* try mod now *)
+	a := things(2) mod 4;
+	write(a);
+
+	(* try to write constant string *)
+	write(string);
+
+	(* test a string literal *)
+	write('It Works');
+
+
+	write('Entering new scope');
+	(* lets test a new scope *)
+	const string := 'scope 2 constant';
+	var a, b : integer;
+	begin
+		(* Try and write out a parent scope variable *)
+		(* c = -1 in parent scope *)
+		write(c);
+		
+		(*try to access c from an even inner scope *)
+		begin
+			write(c);
+			(* and another inner scope*)
+			begin
+				write(c);
+				(* one more just to be sure*)
+				begin
+					write(c);
+					(* i lied *)
+					begin
+						write(c);
+						begin
+							write(c)
+						end
+					end;
+				end;
+			end;
+		end;
+		(* print new local string *)
+		write(string);
+		
+		(* modify b in this scope *)
+		b := 78;
+		write(b);
+
+		(*leave the scope *)
+		write('leaving scope 2')
+	end;
+
+	(* print b to see if it was modified *)
+	write(b);
+
+
+	(* and operator now *)
+	write('a AND b');
+	(* 7 & 3 should equal true *)
+	a := 3;
+	b := 7;
+	write(a and b);
+	(* should be false*)
+	write(0 and 1 and 2);
+
+	(*should be false*)
+	write(0 and 0);
+	(*true*)
+	write(2 and not 0);
+
+	(* now test shifting *)
+	(*divide a by 2*)
+	
+	write('Right shift');
+	a := 128 shr 1;
+	write(a);
+
+	write('Left shift');
+	a := a shl 2;
+	write(a);
+
+	(* not operator *)
+	write(not a);
+	write(not 0);
+
+	(* try some addition *)
+	a := 3 + 5;
+	write(a);
+	(*this should evaluate to 3*)
+	write(3 + not 5 * 3);
+
+	(* should equal 5 *)
+	write(3 * not 0 + 4 div 2);
+	
+	(* now lets do some subtraction *)
+
+	(* = 1 *)
+	write(5 - 4);
+
+	(* = -9 *)
+	write(-5 - 4);
+
+	(* now try some or statements...*)
+	write('Or statements');
+	(* true *)
+	write(1 or 0);
+
+	(* false *)
+	write(0 or 0);
+
+	(*true *)
+	write(0 or 0 or 1);
+
+	(* true  *)
+	write(5 + 0 or 0);
+
+	(* or's & and's*)
+	write('or with and');
+	(*true*)
+	write(1 or (2 and 0));
+	(*true*)
+	write(0 or (2 and 1));	
+
+	(*false*)
+	write(0 or (2 and 0));
+
+	(*true*)
+	write(2 and 0 or 1);
+
+	(* Test some relational operators *)
+	write('Relational Operators');
+	write((2 = 2));
+	write((1 <> 3));
+	write((1 < 2));
+	write((2 <= 2));
+	write((3 > 1));
+	write((3 >= 3));
+
+	write('Rel op false cases');
+	write ((2 >= 3));
+	write ((3 <= 2));
+	write ((2 = 1));
+	write ((3 <> 3));
+
+
+	write('Testing if statements');
+
+	if (1 > 0) then
+	   write('1 is greater than 0')
+	else
+	   write('if statement failed...');
+
+
+	write(0 > 1);
+	if (0 > 1) then
+	   write('0 is greater than 1')
+	else
+           write('0 is less than one');
+
+
+	(*while looping*)
+
+	a := 4;
+	while (a > 0) do begin
+		write('a:', a);
+		a := a - 1;
+	end;
+
+	(*ask for input*)
+	write('Please enter an integer:');
+	read(a, b, c);
+	write('You entered: ', a, b, c);
+end.

@@ -1,0 +1,5 @@
+Syntax Error: line 3:
+Unexpected token (TOK_ASSIGN, ':='), likely missing a(n)  
+  'TOK_SEMICOLON' or
+Possibly due to malformed or missing:
+  Non-terminal: 'Variable'

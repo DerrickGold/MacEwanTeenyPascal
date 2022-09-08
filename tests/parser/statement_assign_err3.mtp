@@ -1,0 +1,7 @@
+begin
+	(*Bad Assignment 2*)
+
+	(*assignment statement: with factor (constant)*)
+	something = 10;
+end
+.

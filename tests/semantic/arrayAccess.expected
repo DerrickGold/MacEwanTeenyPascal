@@ -1,0 +1,46 @@
+
+Semantically Corrected AST
+[Head] (Block, Block Statement) 
+Symbol Table:============================================================================:
+Identifiers    |Stack Offset  |Type                 |Value                           
+-----------------------------------------------------------------------------------------
+index          |NONE          |Int, Con             |5                               
+a              |120           |Int, Var             |                                
+test           |0             |Int, Var, Arr        |30                              
+=======================================================================Depth 0   :Size 124 
+    [Child] (Const Section) 
+        [Child] (Const Declaration) 
+            [Child] 1, TOK_ID, index, (Literal) 
+            [Child] 1, TOK_NUM, 5, (Literal) 
+    [Child] (Variable Section) 
+        [Child] (Variable Declaration, Variable List) 
+            [Child] 2, TOK_ID, test, (Literal) 
+            [Child] 2, TOK_NUM, 30, (Type, Constant, Array, Integer) 
+        [Sibling] (Variable Declaration, Variable List) 
+            [Child] 3, TOK_ID, a, (Literal) 
+            [Child] 3, TOK_KEY_INTEGER, integer, (Type, Integer) 
+    [Child] (Statement List) 
+        [Child] 7, TOK_ASSIGN, :=, (Assign Statement) 
+            [Child] 7, TOK_ID, test, (Variable, Array) 
+                [Child] 7, TOK_ID, a, (Variable) 
+            [Child] 7, TOK_NUM, 2, (Constant, Integer) 
+        [Sibling] 8, TOK_ASSIGN, :=, (Assign Statement) 
+            [Child] 8, TOK_ID, test, (Variable, Array) 
+                [Child] 8, TOK_PLUS, +, (Simple Expression, Binary Adding Operator) 
+                    [Child] 8, TOK_ID, a, (Variable) 
+                    [Child] 8, TOK_NUM, 1, (Constant, Integer) 
+            [Child] 8, TOK_NUM, 3, (Constant, Integer) 
+        [Sibling] 9, TOK_ASSIGN, :=, (Assign Statement) 
+            [Child] 9, TOK_ID, test, (Variable, Array) 
+                [Child] 9, TOK_NUM, 3, (Constant, Integer) 
+            [Child] 9, TOK_NUM, 5, (Constant, Integer) 
+        [Sibling] 10, TOK_ASSIGN, :=, (Assign Statement) 
+            [Child] 10, TOK_ID, test, (Variable, Array) 
+                [Child] 10, TOK_ID, index, (Constant, Integer) 
+            [Child] 10, TOK_NUM, 9, (Constant, Integer) 
+        [Sibling] (Assign Statement) 
+            [Child] 11, TOK_ID, a, (Variable) 
+            [Child] 11, TOK_ID, test, (Variable, Array) 
+                [Child] 11, TOK_PLUS, +, (Simple Expression, Binary Adding Operator) 
+                    [Child] 11, TOK_ID, index, (Constant, Integer) 
+                    [Child] 11, TOK_NUM, 5, (Constant, Integer) 

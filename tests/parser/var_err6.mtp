@@ -1,0 +1,9 @@
+(* variable section start *)
+
+(* missing id, assignment, and type*)
+var ;
+
+begin
+
+end
+.

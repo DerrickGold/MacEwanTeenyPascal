@@ -1,0 +1,9 @@
+(* variable section start *)
+
+(*variable listing, using keyword as an id*)
+var test, integer : integer;
+
+begin
+
+end
+.

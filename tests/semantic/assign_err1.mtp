@@ -1,0 +1,6 @@
+var test : array(20) of integer;
+
+begin
+
+	test := 2
+end.

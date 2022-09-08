@@ -1,0 +1,6 @@
+Syntax Error: line 4:
+Unexpected token (TOK_KEY_OF, 'of'), likely missing a(n)  
+  'TOK_RPAREN' or
+Possibly due to malformed or missing:
+  Non-terminal: 'Array' or
+  Non-terminal: 'Expression'

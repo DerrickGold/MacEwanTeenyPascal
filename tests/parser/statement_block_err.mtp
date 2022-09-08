@@ -1,0 +1,8 @@
+begin
+
+	(*missing begin statement*)
+
+	(*should complain about extra end statement instead of period*)
+	end
+end
+.

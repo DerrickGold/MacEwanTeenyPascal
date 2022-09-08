@@ -1,0 +1,6 @@
+const longString123456789011 := 'This is a really super long string that may not look that great in the symbol table';
+
+begin
+
+
+end.

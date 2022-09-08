@@ -1,0 +1,9 @@
+(* variable section start *)
+
+(*missing semicolon*)
+var test : integer
+
+begin
+
+end
+.

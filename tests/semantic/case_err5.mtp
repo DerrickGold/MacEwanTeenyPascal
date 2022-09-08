@@ -1,0 +1,15 @@
+(*Try duplicate case values in the same case*)
+const test := 1;
+var a, b : integer;
+
+
+begin
+
+	case a + b of
+	1, test:
+		a := b
+
+	end
+
+
+end.

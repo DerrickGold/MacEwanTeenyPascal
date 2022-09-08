@@ -1,0 +1,10 @@
+(*Testing simple expression with string constant *)
+const test := 'error';
+var a, b : integer;
+
+begin
+
+	a := test + b div a - 3;
+
+
+end.

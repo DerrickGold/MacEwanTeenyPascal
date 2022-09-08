@@ -1,0 +1,4 @@
+Syntax Error: line 12:
+Unexpected token (TOK_PERIOD, '.'), likely missing a(n)  
+  'TOK_SEMICOLON' or
+  'TOK_KEY_END'

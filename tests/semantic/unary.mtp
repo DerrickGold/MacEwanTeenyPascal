@@ -1,0 +1,6 @@
+var something : integer;
+
+begin
+
+	something := -2 * 3;
+end.

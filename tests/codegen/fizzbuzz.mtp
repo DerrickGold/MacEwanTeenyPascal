@@ -1,0 +1,31 @@
+(*
+ * An attempt at a fizzbuzz program in teeny pascal
+ * For every number between 1 and 100, print
+ * 'fizz' for every multiple of 3, 'buzz' for every
+ * multiple of 5, and 'fizzbuzz' for every multiple of
+ * 3 and 5.
+ *
+ * If it is neither a multiple of 3 or 5, print the
+ * number.
+ *)
+
+const upper := 100;
+var counter : integer;
+
+begin
+	counter := 1;
+
+	while (counter <= upper) do begin
+
+		if (counter mod 15 = 0) then
+	      		write('fizzbuzz')
+		else if (counter mod 5 = 0) then
+		     	write('buzz')
+		else if (counter mod 3 = 0) then
+		     	write('fizz')
+		else
+			write(counter);
+
+		counter := counter + 1;
+	end;
+end.

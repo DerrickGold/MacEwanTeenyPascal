@@ -1,0 +1,8 @@
+(*Testing simple expression type checking*)
+const test := 2;
+var a, b : integer;
+
+begin
+	a := a + b - test;
+	a := a div b * test - 2
+end.

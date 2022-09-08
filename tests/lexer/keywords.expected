@@ -1,0 +1,23 @@
+1, TOK_KEY_AND, and
+2, TOK_KEY_DO, do
+3, TOK_KEY_NOT, not
+4, TOK_KEY_THEN, then
+5, TOK_KEY_ARRAY, array
+6, TOK_KEY_ELSE, else
+7, TOK_KEY_OF, of
+8, TOK_KEY_VAR, var
+9, TOK_KEY_BEGIN, begin
+10, TOK_KEY_END, end
+11, TOK_KEY_OR, or
+12, TOK_KEY_WHILE, while
+13, TOK_KEY_CASE, case
+14, TOK_KEY_IF, if
+15, TOK_KEY_READ, read
+16, TOK_KEY_WRITE, write
+17, TOK_KEY_CONST, const
+18, TOK_KEY_INTEGER, integer
+19, TOK_KEY_SHL, shl
+20, TOK_KEY_SHR, shr
+21, TOK_KEY_DIV, div
+22, TOK_KEY_MOD, mod
+22, TOK_ENDFILE,

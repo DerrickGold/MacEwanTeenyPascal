@@ -1,0 +1,9 @@
+(* variable section start *)
+
+(*missing id*)
+var : array (20) of integer;
+
+begin
+
+end
+.

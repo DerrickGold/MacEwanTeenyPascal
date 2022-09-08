@@ -1,0 +1,8 @@
+(* Declare an array with constant containing string*)
+
+const index := 'Stringing';
+var something : array(index) of integer;
+
+begin
+
+end.

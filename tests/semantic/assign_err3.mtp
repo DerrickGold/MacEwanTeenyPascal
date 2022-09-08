@@ -1,0 +1,10 @@
+(*negative index constant*)
+const two := 2;
+var a,b,c : integer;
+    ar1, ar2 : array(20) of integer;
+
+begin
+
+	ar2(-two) := ar1(two)
+
+end.

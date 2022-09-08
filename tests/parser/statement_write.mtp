@@ -1,0 +1,8 @@
+begin
+	(*write statement*)
+	write(1+2*3);
+
+	(*write statement, multiple expressions*)
+	write(1+2*3, four, five, six);
+end
+.

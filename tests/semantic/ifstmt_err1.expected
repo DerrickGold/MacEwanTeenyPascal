@@ -1,0 +1,3 @@
+
+Semantic Error [line 6]: value: "test"
+	Invalid conditional type: Expected type(s) 'Boolean'; found 'Integer' instead.

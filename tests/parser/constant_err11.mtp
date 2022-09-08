@@ -1,0 +1,7 @@
+(* constants *)
+(*missing id*)
+const := 10;
+begin
+
+end
+.

@@ -1,0 +1,3 @@
+
+Semantic Error [line 7]: value: "test"
+	Invalid l-value type: Expected type(s) 'Variable'; found 'Constant' instead.

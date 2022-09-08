@@ -1,0 +1,9 @@
+(* constants *)
+const test :=10;
+const floop := 1337;
+(*three := 'Stringify';*)
+
+begin
+
+end
+.

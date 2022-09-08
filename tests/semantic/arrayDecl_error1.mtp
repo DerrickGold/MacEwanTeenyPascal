@@ -1,0 +1,6 @@
+(* Declare an array with size 0*)
+var something : array(0) of integer;
+
+begin
+
+end.

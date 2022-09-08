@@ -1,0 +1,17 @@
+(*Try case with string literal*)
+const test := 'error';
+var a, b : integer;
+
+
+begin
+
+	case a + b of
+	'error2':
+		a := b
+	;
+	test:
+		b := a
+	end
+
+
+end.

@@ -1,0 +1,8 @@
+(*Testing array access with string literal*)
+
+const index := 'error';
+var test : array(30) of integer;
+
+begin
+	test('error') := 2;
+end.

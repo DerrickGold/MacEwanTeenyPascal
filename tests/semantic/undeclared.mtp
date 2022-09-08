@@ -1,0 +1,6 @@
+begin
+	if something = 10 then
+		something := 5
+	
+
+end.

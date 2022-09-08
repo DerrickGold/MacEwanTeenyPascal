@@ -1,0 +1,5 @@
+(*try assinging a string literal*)
+var a : integer;
+begin
+	a := '1'
+end.

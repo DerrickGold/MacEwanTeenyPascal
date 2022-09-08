@@ -1,0 +1,5 @@
+Syntax Error: line 8:
+Unexpected token (TOK_KEY_END, 'end'), expected a token type of:  
+  'TOK_KEY_BEGIN' or
+  'TOK_ID' or
+  'TOK_KEY_VAR'

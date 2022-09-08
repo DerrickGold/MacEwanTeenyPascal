@@ -1,0 +1,72 @@
+-1
+2
+-6
+-1
+-6
+-999
+1111
+-999 1111 -6
+-6
+-3
+-2
+Hello, World
+It Works
+Entering new scope
+-1
+-1
+-1
+-1
+-1
+-1
+scope 2 constant
+78
+leaving scope 2
+2
+a AND b
+true
+false
+false
+true
+Right shift
+64
+Left shift
+256
+false
+true
+8
+3
+5
+1
+-9
+Or statements
+true
+false
+true
+true
+or with and
+true
+true
+false
+true
+Relational Operators
+true
+true
+true
+true
+true
+true
+Rel op false cases
+false
+false
+false
+false
+Testing if statements
+1 is greater than 0
+false
+0 is less than one
+a: 4
+a: 3
+a: 2
+a: 1
+Please enter an integer:
+You entered:  1 2 3

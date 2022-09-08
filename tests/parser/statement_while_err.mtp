@@ -1,0 +1,7 @@
+begin
+
+	(* while statement: missing do *)
+	while 10
+		sample := sample + 1
+end
+.

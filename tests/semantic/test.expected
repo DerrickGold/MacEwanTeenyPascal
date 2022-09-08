@@ -1,0 +1,14 @@
+
+Semantically Corrected AST
+[Head] (Block, Block Statement) 
+Symbol Table:============================================================================:
+Identifiers    |Stack Offset  |Type                 |Value                           
+-----------------------------------------------------------------------------------------
+longString1... |NONE          |Str, Con             |'This is a really super long... 
+=======================================================================Depth 0   :Size 0   
+    [Child] (Const Section) 
+        [Child] (Const Declaration) 
+            [Child] 1, TOK_ID, longString123456789011, (Literal) 
+            [Child] 1, TOK_STR, 'This is a really super long string that may not look that great in the symbol table', (String) 
+    [Child] (Statement List) 
+        [Child] (Null Statement) 

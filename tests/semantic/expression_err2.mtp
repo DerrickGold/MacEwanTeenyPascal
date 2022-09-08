@@ -1,0 +1,6 @@
+(*Testing simple expressions with constant literal*)
+var a,b : integer;
+
+begin
+	a := (a = b) > ('error' <= (b <> a)) 
+end.

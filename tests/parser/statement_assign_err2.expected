@@ -1,0 +1,4 @@
+Syntax Error: line 5:
+Unexpected token (TOK_COLON, ':'), expected a token type of:  
+  'TOK_ASSIGN' or
+  'TOK_LPAREN'

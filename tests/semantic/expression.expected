@@ -1,0 +1,43 @@
+
+Semantically Corrected AST
+[Head] (Block, Block Statement) 
+Symbol Table:============================================================================:
+Identifiers    |Stack Offset  |Type                 |Value                           
+-----------------------------------------------------------------------------------------
+a              |0             |Int, Var             |                                
+b              |4             |Int, Var             |                                
+test           |NONE          |Int, Con             |1                               
+=======================================================================Depth 0   :Size 8   
+    [Child] (Const Section) 
+        [Child] (Const Declaration) 
+            [Child] 2, TOK_ID, test, (Literal) 
+            [Child] 2, TOK_NUM, 1, (Literal) 
+    [Child] (Variable Section) 
+        [Child] (Variable Declaration, Variable List) 
+            [Child] 3, TOK_ID, a, (Literal) 
+            [Sibling] 3, TOK_ID, b, (Literal) 
+            [Child] 3, TOK_KEY_INTEGER, integer, (Type, Integer) 
+    [Child] (Statement List) 
+        [Child] (Assign Statement) 
+            [Child] 6, TOK_ID, a, (Variable) 
+            [Child] 6, TOK_NUM, 3, (Constant, Integer) 
+        [Sibling] (Assign Statement) 
+            [Child] 7, TOK_ID, b, (Variable) 
+            [Child] 7, TOK_NUM, 4, (Constant, Integer) 
+        [Sibling] (If Statement) 
+            [Child] 8, TOK_GREATER, >, (Condition, Expression, Relational Operator) 
+                [Child] 8, TOK_EQ, =, (Expression, Relational Operator) 
+                    [Child] 8, TOK_ID, a, (Variable) 
+                    [Child] 8, TOK_ID, b, (Variable) 
+                [Child] 8, TOK_LTEQ, <=, (Expression, Relational Operator) 
+                    [Child] 8, TOK_GREATER, >, (Expression, Relational Operator) 
+                        [Child] 8, TOK_ID, test, (Constant, Integer) 
+                        [Child] 8, TOK_NUM, 0, (Constant, Integer) 
+                    [Child] 8, TOK_NOTEQ, <>, (Expression, Relational Operator) 
+                        [Child] 8, TOK_ID, b, (Variable) 
+                        [Child] 8, TOK_ID, a, (Variable) 
+            [Child] (Write Statement) Arguments: 1
+                [Child] 9, TOK_STR, 'Success', (Constant, String) 
+            [Child] (Write Statement) Arguments: 1
+                [Child] 11, TOK_STR, 'Error', (Constant, String) 
+        [Sibling] (Null Statement) 

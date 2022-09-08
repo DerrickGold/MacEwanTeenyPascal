@@ -1,0 +1,20 @@
+1, TOK_ERROR, [
+1, TOK_ERROR, ]
+1, TOK_ERROR, {
+1, TOK_ERROR, }
+1, TOK_ERROR, &
+1, TOK_ERROR, $
+1, TOK_ERROR, @
+1, TOK_ERROR, !
+1, TOK_ERROR, ~
+1, TOK_ERROR, '
+2, TOK_ERROR, #0Fid
+3, TOK_ERROR, 99id
+4, TOK_ERROR, 'adfadfadf
+5, TOK_ID, doFunction
+6, TOK_ID, FunctionDo
+7, TOK_STR, 'string'
+8, TOK_ERROR, 100'string'
+9, TOK_ERROR, 'string'100
+10, TOK_ERROR, identifier'stringish thing'
+10, TOK_ENDFILE,

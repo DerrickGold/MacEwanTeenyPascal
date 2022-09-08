@@ -1,0 +1,4 @@
+
+Semantic Error [line 2]: value: "0"
+	Invalid array declaration: 
+	Invalid array size '0', must be greater than 0.

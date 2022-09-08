@@ -1,0 +1,3 @@
+
+Semantic Error [line 7]: value: "sc1_string"
+	Invalid conditional type: Expected type(s) 'Boolean'; found 'String' instead.

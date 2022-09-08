@@ -1,0 +1,17 @@
+
+Semantically Corrected AST
+[Head] (Block, Block Statement) 
+Symbol Table:============================================================================:
+Identifiers    |Stack Offset  |Type                 |Value                           
+-----------------------------------------------------------------------------------------
+a              |0             |Int, Var             |                                
+=======================================================================Depth 0   :Size 4   
+    [Child] (Variable Section) 
+        [Child] (Variable Declaration, Variable List) 
+            [Child] 2, TOK_ID, a, (Literal) 
+            [Child] 2, TOK_KEY_INTEGER, integer, (Type, Integer) 
+    [Child] (Statement List) 
+        [Child] (Read Statement) Arguments: 2
+            [Child] 4, TOK_ID, a, (Variable) 
+            [Sibling] 4, TOK_ID, a, (Variable) 
+        [Sibling] (Null Statement) 

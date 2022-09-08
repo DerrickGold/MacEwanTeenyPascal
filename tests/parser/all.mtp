@@ -1,0 +1,64 @@
+(* constants *)
+const test :=10;
+      floop := 1337;
+      three := 'Stringify';
+
+(* variable declaration *)
+var newVar : integer; otherVar : array(20) of integer;
+    sample1, sample2, andThree : integer;
+
+
+begin
+(* statement lists in here*)
+
+	(*
+	 * nested block statement
+	 * These variables are only accessible in the nested block
+	 *)
+	var sample1, sample2, andThree : array(test) of integer;
+	begin
+
+	end;
+	(* this should also produce statements *)
+	sample1 := not 10 * 20;
+
+
+	case sample2 of
+		20 :
+		   andThree := 30
+		;
+		40 :
+		   andThree := 25
+	end;
+
+	
+	case andThree of
+		sample2 : andThree := 45
+	else
+		sample2 := 0
+	end;
+
+	
+	if (andThree = 25) then
+	begin
+		sample1 := 0
+	end;
+
+	if (andThree = 11) then
+		sample2 := 100
+	else
+		sample1 := 33;
+
+	while (andThree) do
+		sample1 := sample1 + 2;
+
+
+	write(andThree);
+	write(andThree, sample2, sample1, newVar);
+	write(andThree, sample2);
+
+	read(andThree);
+	read(andThree, sample2, sample1, newVar);
+	read(andThree, sample2)
+end
+.

@@ -1,0 +1,17 @@
+(*
+ * Testing large case statement
+ * WARNING: CREATES LARGE ASM FILE
+ *)
+
+
+var something : integer;
+
+begin
+
+        case something of
+	2147483647:
+		write('Hmmm...')
+	else
+		write('it works?')
+        end
+end.

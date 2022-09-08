@@ -1,0 +1,7 @@
+(* constants *)
+test :=10;
+
+begin
+
+end
+.

@@ -1,0 +1,41 @@
+
+Semantically Corrected AST
+[Head] (Block, Block Statement) 
+Symbol Table:============================================================================:
+Identifiers    |Stack Offset  |Type                 |Value                           
+-----------------------------------------------------------------------------------------
+a              |0             |Int, Var             |                                
+b              |4             |Int, Var             |                                
+test           |NONE          |Int, Con             |1                               
+=======================================================================Depth 0   :Size 8   
+    [Child] (Const Section) 
+        [Child] (Const Declaration) 
+            [Child] 2, TOK_ID, test, (Literal) 
+            [Child] 2, TOK_NUM, 1, (Literal) 
+    [Child] (Variable Section) 
+        [Child] (Variable Declaration, Variable List) 
+            [Child] 3, TOK_ID, a, (Literal) 
+            [Sibling] 3, TOK_ID, b, (Literal) 
+            [Child] 3, TOK_KEY_INTEGER, integer, (Type, Integer) 
+    [Child] (Statement List) 
+        [Child] (If Statement) 
+            [Child] 7, TOK_EQ, =, (Condition, Expression, Relational Operator) 
+                [Child] 7, TOK_ID, test, (Constant, Integer) 
+                [Child] 7, TOK_ID, b, (Variable) 
+            [Child] (Write Statement) Arguments: 1
+                [Child] 8, TOK_STR, 'Hello', (Constant, String) 
+        [Sibling] (If Statement) 
+            [Child] 11, TOK_EQ, =, (Condition, Expression, Relational Operator) 
+                [Child] 11, TOK_ID, test, (Constant, Integer) 
+                [Child] 11, TOK_ID, a, (Variable) 
+            [Child] (Write Statement) Arguments: 1
+                [Child] 12, TOK_STR, 'World', (Constant, String) 
+            [Child] (Write Statement) Arguments: 1
+                [Child] 14, TOK_STR, 'Testing', (Constant, String) 
+        [Sibling] (If Statement) 
+            [Child] 17, TOK_GREATER, >, (Condition, Expression, Relational Operator) 
+                [Child] 17, TOK_ID, a, (Variable) 
+                [Child] 17, TOK_ID, b, (Variable) 
+            [Child] (Write Statement) Arguments: 1
+                [Child] 18, TOK_STR, 'True', (Constant, String) 
+        [Sibling] (Null Statement) 

@@ -1,0 +1,4 @@
+
+Semantic Error [line 4]: value: "sc1_buf"
+	Unexpected r-value type: 
+Expected type(s) 'Variable' and 'Integer'; found 'String' instead.

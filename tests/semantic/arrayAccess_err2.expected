@@ -1,0 +1,3 @@
+
+Semantic Error [line 7]: value: "literal0"
+	Invalid l-value type: Expected type(s) 'Integer' or 'Boolean'; found 'String' instead.

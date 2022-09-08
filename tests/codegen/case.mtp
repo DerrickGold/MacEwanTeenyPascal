@@ -1,0 +1,16 @@
+var a, b : integer;
+
+begin
+	a := 0;
+	b := -8;
+	
+	case (a + b) of
+	1,2:
+		write('one or two');
+	4:
+		write('not three')
+	else
+		write('not one, two or four')
+	end;
+
+end.

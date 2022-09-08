@@ -1,0 +1,4 @@
+
+Semantic Error [line 4]: 
+	Invalid array declaration: 
+	Expected 'Constant Integer' index type; found type: 'Constant String'

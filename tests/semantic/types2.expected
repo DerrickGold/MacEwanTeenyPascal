@@ -1,0 +1,4 @@
+
+Semantic Error [line 9]: value: "sc1_string"
+	Unexpected l-value type: 
+Expected type(s) 'Integer' or 'Boolean'; found 'String' instead.

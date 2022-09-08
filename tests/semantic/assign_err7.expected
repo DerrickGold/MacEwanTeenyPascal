@@ -1,0 +1,3 @@
+
+Semantic Error [line 6]: value: "notArray"
+	Index attempt on non-array variable.

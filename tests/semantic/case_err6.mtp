@@ -1,0 +1,12 @@
+const test := 1;
+var a : integer;
+
+begin
+
+	case a of
+	     test: write('Hello')
+	else
+
+	end
+
+end.

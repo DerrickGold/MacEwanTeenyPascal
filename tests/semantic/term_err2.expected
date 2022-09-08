@@ -1,0 +1,4 @@
+
+Semantic Error [line 5]: value: "literal0"
+	Unexpected r-value type: 
+Expected type(s) 'Integer' or 'Boolean'; found 'String' instead.

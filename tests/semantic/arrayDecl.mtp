@@ -1,0 +1,7 @@
+const someval := 100;
+var someArry : array(someval) of integer;
+    array2 : array(30) of integer;
+    size : integer;
+begin
+
+end.

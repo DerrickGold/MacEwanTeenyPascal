@@ -1,0 +1,9 @@
+(* variable section start *)
+
+(*variable listing, missing variable*)
+var test, : integer;
+
+begin
+
+end
+.

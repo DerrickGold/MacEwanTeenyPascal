@@ -1,0 +1,9 @@
+(*Test if condition with non-Boolean value*)
+const test := 'error';
+var a, b: integer;
+
+begin
+	if test then
+	   write('Hello')
+	;
+end.

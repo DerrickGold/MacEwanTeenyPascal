@@ -1,0 +1,9 @@
+(* constants *)
+const test :=10;
+floop := 1337;
+three := 'Stringify';
+
+begin
+
+end
+(* missing period at end of program *)

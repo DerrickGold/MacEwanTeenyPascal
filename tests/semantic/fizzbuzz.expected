@@ -1,0 +1,59 @@
+
+Semantically Corrected AST
+[Head] (Block, Block Statement) 
+Symbol Table:============================================================================:
+Identifiers    |Stack Offset  |Type                 |Value                           
+-----------------------------------------------------------------------------------------
+counter        |0             |Int, Var             |                                
+upper          |NONE          |Int, Con             |100                             
+=======================================================================Depth 0   :Size 4   
+    [Child] (Const Section) 
+        [Child] (Const Declaration) 
+            [Child] 12, TOK_ID, upper, (Literal) 
+            [Child] 12, TOK_NUM, 100, (Literal) 
+    [Child] (Variable Section) 
+        [Child] (Variable Declaration, Variable List) 
+            [Child] 13, TOK_ID, counter, (Literal) 
+            [Child] 13, TOK_KEY_INTEGER, integer, (Type, Integer) 
+    [Child] (Statement List) 
+        [Child] (Assign Statement) 
+            [Child] 16, TOK_ID, counter, (Variable) 
+            [Child] 16, TOK_NUM, 1, (Constant, Integer) 
+        [Sibling] (While Statement) 
+            [Child] 18, TOK_LTEQ, <=, (Condition, Expression, Relational Operator) 
+                [Child] 18, TOK_ID, counter, (Variable) 
+                [Child] 18, TOK_ID, upper, (Constant, Integer) 
+            [Child] (Block, Block Statement) 
+Symbol Table:============================================================================:
+Identifiers    |Stack Offset  |Type                 |Value                           
+-----------------------------------------------------------------------------------------
+=======================================================================Depth 1   :Size 0   
+                [Child] (Statement List) 
+                    [Child] (If Statement) 
+                        [Child] 20, TOK_EQ, =, (Condition, Expression, Relational Operator) 
+                            [Child] 20, TOK_KEY_MOD, mod, (Multiply Operator, Term) 
+                                [Child] 20, TOK_ID, counter, (Variable) 
+                                [Child] 20, TOK_NUM, 15, (Constant, Integer) 
+                            [Child] 20, TOK_NUM, 0, (Constant, Integer) 
+                        [Child] (Write Statement) Arguments: 1
+                            [Child] 21, TOK_STR, 'fizzbuzz', (Constant, String) 
+                        [Child] (If Statement) 
+                            [Child] 22, TOK_EQ, =, (Condition, Expression, Relational Operator) 
+                                [Child] 22, TOK_KEY_MOD, mod, (Multiply Operator, Term) 
+                                    [Child] 22, TOK_ID, counter, (Variable) 
+                                    [Child] 22, TOK_NUM, 5, (Constant, Integer) 
+                                [Child] 22, TOK_NUM, 0, (Constant, Integer) 
+                            [Child] (Write Statement) Arguments: 1
+                                [Child] 23, TOK_STR, 'fizz', (Constant, String) 
+                            [Child] (If Statement) 
+                                [Child] 24, TOK_EQ, =, (Condition, Expression, Relational Operator) 
+                                    [Child] 24, TOK_KEY_MOD, mod, (Multiply Operator, Term) 
+                                        [Child] 24, TOK_ID, counter, (Variable) 
+                                        [Child] 24, TOK_NUM, 3, (Constant, Integer) 
+                                    [Child] 24, TOK_NUM, 0, (Constant, Integer) 
+                                [Child] (Write Statement) Arguments: 1
+                                    [Child] 25, TOK_STR, 'buzz', (Constant, String) 
+                                [Child] (Write Statement) Arguments: 1
+                                    [Child] 27, TOK_ID, counter, (Variable) 
+                    [Sibling] (Null Statement) 
+        [Sibling] (Null Statement) 

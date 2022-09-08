@@ -1,0 +1,5 @@
+begin
+	(* Not a real value *)	
+	something := 10something2;
+end
+.

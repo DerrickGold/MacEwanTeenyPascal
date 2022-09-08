@@ -1,0 +1,9 @@
+(* variable section start *)
+
+(* missing colon*)
+var test integer;
+
+begin
+
+end
+.

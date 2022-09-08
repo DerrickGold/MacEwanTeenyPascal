@@ -1,0 +1,39 @@
+begin
+
+	(*assignment statement: with factor (constant)*)
+	something := 10;
+	
+	(*assignment statement: with factor (variable)*)
+	something := something2;
+
+	(*assignment statement: with factor (not factor)*)
+	something := not something2;
+
+	(*assignment statement: with terms*)
+	something := 10 * 2;
+	something := 10 div 2;
+	something := 10 mod 2;
+	something := 10 and 2;
+	something := 10 shl 2;
+	something := 10 shr 2;
+
+	(*assignment statement: with simple expression unary*)
+	something := -10;
+	something := +10;
+
+	(*assignment statement: binary adding operator*)
+	something := 10 * 2 + 2 div 10;
+	something := 10 * 2 - 2 div 10;
+	something := 10 * 2 or 2 div 10;
+
+	(*assignment statement: with expression*)
+	something := (10 * 2 + 2 div 10 = 10 * 2 or 2 div 10);
+	something := (10 * 2 + 2 div 10 <> 10 * 2 or 2 div 10);
+	something := (10 * 2 + 2 div 10 < 10 * 2 or 2 div 10);
+	something := (10 * 2 + 2 div 10 > 10 * 2 or 2 div 10);
+	something := (10 * 2 + 2 div 10 <= 10 * 2 or 2 div 10);
+	something := (10 * 2 + 2 div 10 >= 10 * 2 or 2 div 10);
+
+	
+end
+.

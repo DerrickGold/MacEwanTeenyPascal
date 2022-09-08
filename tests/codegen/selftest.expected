@@ -1,0 +1,81 @@
+Success literal string written
+Success const declared string written
+Success variable assignment 3 3
+Success variable assignment 3 -5
+Success greater than 3 0
+Success less than 3 4
+Success greater than equal 3 3
+Success greater than equal 3 0
+Success less than equal 3 3
+Success less than equal 3 100
+Success multiply 2 2
+Success multiply 3 2
+Success division 6 2
+Success division 12 2
+Success shift left 1 8
+Success shift left 3 2
+Success shift right 256 8
+Success shift right 256 3
+Success modulo 15 2
+Success modulo 15 3
+Success addition 3 2
+Success addition 3789 90853
+Success addition 3789 -90853
+Success subtraction 3 2
+Success subtraction 3 -2
+Success subtraction 3 false
+Success or 3 false
+Success or 0 false false 1
+Success or 0 false false false
+Success and 1 1
+Success and 1 2 3
+Success and 0 1 2
+Success case statement 5
+Success case statement default case 4
+Success case statement 3
+Success case statement default case 2
+Success case statement default case 1
+Success case statement default case 0
+Success case statement default case -3
+Success case statement default case -2
+Success case statement default case -1
+Success case statement default case 0
+Success case statement default case 1
+Success case statement default case 2
+Success case statement 3
+Success case statement default case 4
+Success case statement 5
+Success case statement default case 6
+Success case statement default case 7
+Success case statement default case 8
+Success case statement 9
+Success case statement default case 10
+11
+Success scope testing 94 94
+Success scope testing 77 77
+Success scope testing 77 77
+Success scope testing 1001 1001
+Success scope testing 1001 1001
+Success scope testing 200 200
+Success scope testing 1001 1001
+Success array assignment 0
+Success array assignment 1
+Success array assignment 2
+Success array assignment 3
+Success array assignment 4
+Success array assignment 5
+Success array assignment 6
+Success array assignment 7
+Success array assignment 8
+Success array assignment 9
+Success array assignment 10
+Success array assignment 11
+Success array assignment 12
+Success array assignment 13
+Success array assignment 14
+Success array assignment 15
+Success array assignment 16
+Success array assignment 17
+Success array assignment 18
+Success array assignment 19
+Success array access 0 1 3

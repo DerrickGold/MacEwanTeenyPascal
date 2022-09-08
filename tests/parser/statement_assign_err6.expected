@@ -1,0 +1,4 @@
+Syntax Error: line 3:
+Unexpected token (TOK_ERROR, '10something2'), expected a token type of:  
+  'TOK_LPAREN' or
+  'TOK_KEY_NOT'

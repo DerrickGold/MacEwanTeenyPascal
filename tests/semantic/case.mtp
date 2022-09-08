@@ -1,0 +1,16 @@
+const test := 1;
+var a, b : integer;
+
+
+begin
+
+	case a + b of
+	2,3:
+		a := b
+	;
+	test:
+		b := a
+	end
+
+
+end.

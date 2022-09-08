@@ -1,0 +1,8 @@
+begin
+	(*Missing Semicolon Error*)
+
+	(*assignment statement: with factor (constant)*)
+	something := 10
+	something := 22;
+end
+.

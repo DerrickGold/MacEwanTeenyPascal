@@ -1,0 +1,42 @@
+begin
+
+	(* case statment with one case*)
+	case something of
+	const1:
+		something := 2
+	end;
+
+	(* case statement with multiple cases *)
+	case something of
+	const1:
+		something := 3;
+	const2:
+		something := 4;
+	const3:
+		something := 5
+	end;
+
+	(* case statement with else *)
+	case something of
+	const1:
+		something := 6
+	else
+		something := 7
+	end;
+
+	(* case statement with multiple cases and  else *)
+	case something of
+	const1:
+		something := 8;
+	const2:
+		something := 9
+	else
+		something := 7
+	end;
+
+	case something of
+	const1, const2:
+		something := 8;
+	end
+end
+.

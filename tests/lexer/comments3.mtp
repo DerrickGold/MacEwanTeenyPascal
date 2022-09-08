@@ -1,0 +1,7 @@
+(*Regular comment here (*with nested commment here as well
+(*maybe third level nested comment*)
+new line here*)
+
+finally the last line*)
+(*Then the next token is a comment for a challenge *)
+end .

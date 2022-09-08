@@ -1,0 +1,4 @@
+
+Semantic Error [line 6]: value: "sc1_test"
+	Unexpected r-value type: 
+Expected type(s) 'Integer' or 'Boolean'; found 'String' instead.

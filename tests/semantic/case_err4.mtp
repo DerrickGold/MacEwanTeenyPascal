@@ -1,0 +1,17 @@
+(*Try duplicate case values with constant*)
+const test := 1;
+var a, b : integer;
+
+
+begin
+
+	case a + b of
+	test:
+		a := b
+	;
+	1:
+		b := a
+	end
+
+
+end.

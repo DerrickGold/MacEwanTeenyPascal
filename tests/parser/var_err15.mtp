@@ -1,0 +1,9 @@
+(* variable section start *)
+
+(*missing array*)
+var test: (20) of integer;
+
+begin
+
+end
+.

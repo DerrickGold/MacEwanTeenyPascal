@@ -1,0 +1,10 @@
+(*Throw warning for empty else clause*)
+var a, b: integer;
+
+begin
+
+	if a <> b then
+	   write('Test')
+	else
+	
+end.

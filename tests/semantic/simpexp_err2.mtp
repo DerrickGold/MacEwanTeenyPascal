@@ -1,0 +1,5 @@
+(*Testing simple expression with string literal *)
+var a, b : integer;
+begin
+	a := b div a - 'error';
+end.

@@ -1,0 +1,35 @@
+
+Semantically Corrected AST
+[Head] (Block, Block Statement) 
+Symbol Table:============================================================================:
+Identifiers    |Stack Offset  |Type                 |Value                           
+-----------------------------------------------------------------------------------------
+a              |0             |Int, Var             |                                
+b              |4             |Int, Var             |                                
+test           |NONE          |Int, Con             |1                               
+=======================================================================Depth 0   :Size 8   
+    [Child] (Const Section) 
+        [Child] (Const Declaration) 
+            [Child] 1, TOK_ID, test, (Literal) 
+            [Child] 1, TOK_NUM, 1, (Literal) 
+    [Child] (Variable Section) 
+        [Child] (Variable Declaration, Variable List) 
+            [Child] 2, TOK_ID, a, (Literal) 
+            [Sibling] 2, TOK_ID, b, (Literal) 
+            [Child] 2, TOK_KEY_INTEGER, integer, (Type, Integer) 
+    [Child] (Statement List) 
+        [Child] (Case Statement) Case Count: 3
+            [Child] 7, TOK_PLUS, +, (Simple Expression, Binary Adding Operator) 
+                [Child] 7, TOK_ID, a, (Variable) 
+                [Child] 7, TOK_ID, b, (Variable) 
+            [Child] (Case List, Case) 
+                [Child] 8, TOK_NUM, 2, (Const List, Constant, Integer) 
+                [Sibling] 8, TOK_NUM, 3, (Constant, Integer) 
+                [Child] (Assign Statement) 
+                    [Child] 9, TOK_ID, a, (Variable) 
+                    [Child] 9, TOK_ID, b, (Variable) 
+            [Sibling] (Case) 
+                [Child] 11, TOK_ID, test, (Const List, Constant, Integer) 
+                [Child] (Assign Statement) 
+                    [Child] 12, TOK_ID, b, (Variable) 
+                    [Child] 12, TOK_ID, a, (Variable) 

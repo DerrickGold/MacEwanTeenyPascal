@@ -1,0 +1,3 @@
+3, TOK_KEY_END, end
+3, TOK_PERIOD, .
+3, TOK_ENDFILE,

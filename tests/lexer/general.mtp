@@ -1,0 +1,12 @@
+(*positive number*)
+123123
+(*positive hex = 4001 *)
+#FA1
+(*negative numbers*)
+-1321
+(*negative hex*)
+-#FA1
+(*identifier*)
+something
+(*string*)
+'test string'

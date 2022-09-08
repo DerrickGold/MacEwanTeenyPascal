@@ -1,0 +1,4 @@
+Syntax Error: line 4:
+Unexpected token (TOK_KEY_ARRAY, 'array'), expected a token type of:  
+  'TOK_COMMA' or
+  'TOK_COLON'

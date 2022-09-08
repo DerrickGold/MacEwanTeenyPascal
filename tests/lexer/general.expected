@@ -1,0 +1,9 @@
+2, TOK_NUM, 123123
+4, TOK_NUM, 4001
+6, TOK_MINUS, -
+6, TOK_NUM, 1321
+8, TOK_MINUS, -
+8, TOK_NUM, 4001
+10, TOK_ID, something
+12, TOK_STR, 'test string'
+12, TOK_ENDFILE,

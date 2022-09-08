@@ -1,0 +1,3 @@
+(*Now here is a regular comment (*with a nested comment here!*)
+and this line should still be commented*)
+end .

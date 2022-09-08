@@ -1,0 +1,20 @@
+(*Testing if statements with type checking*)
+const test := 1;
+var a, b: integer;
+
+begin
+
+	if test = b then
+	   write('Hello')
+	;
+
+	if test = a then
+	   write('World')
+	else
+ 	   write('Testing')
+	;
+
+	if (a > b) then
+	   write('True')
+	;
+end.

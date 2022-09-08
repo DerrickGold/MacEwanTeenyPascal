@@ -1,0 +1,19 @@
+(*Proper uses of while statements*)
+const test := 1;
+var a,b : integer;
+
+begin
+
+	while a > b do
+	      a := a + 1;
+
+	while test < b do
+	      b := a * test;
+
+	while test <> 0 do
+	      var a : integer;
+	begin
+		a := a + test
+	end;
+	      
+end.

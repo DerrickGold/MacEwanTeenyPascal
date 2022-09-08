@@ -1,0 +1,24 @@
+
+Semantic Warning [line 6]:
+	'else' condition using implicit Null Statment.
+Semantically Corrected AST
+[Head] (Block, Block Statement) 
+Symbol Table:============================================================================:
+Identifiers    |Stack Offset  |Type                 |Value                           
+-----------------------------------------------------------------------------------------
+a              |0             |Int, Var             |                                
+b              |4             |Int, Var             |                                
+=======================================================================Depth 0   :Size 8   
+    [Child] (Variable Section) 
+        [Child] (Variable Declaration, Variable List) 
+            [Child] 2, TOK_ID, a, (Literal) 
+            [Sibling] 2, TOK_ID, b, (Literal) 
+            [Child] 2, TOK_KEY_INTEGER, integer, (Type, Integer) 
+    [Child] (Statement List) 
+        [Child] (If Statement) 
+            [Child] 6, TOK_NOTEQ, <>, (Condition, Expression, Relational Operator) 
+                [Child] 6, TOK_ID, a, (Variable) 
+                [Child] 6, TOK_ID, b, (Variable) 
+            [Child] (Write Statement) Arguments: 1
+                [Child] 7, TOK_STR, 'Test', (Constant, String) 
+            [Child] (Null Statement) 

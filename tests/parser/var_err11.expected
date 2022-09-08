@@ -1,0 +1,3 @@
+Syntax Error: line 4:
+Unexpected token (TOK_KEY_INTEGER, 'integer'), expected a token type of:  
+  'TOK_KEY_OF'

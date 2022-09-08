@@ -1,0 +1,13 @@
+(*Testing simple expressions*)
+const test := 1;
+var a,b : integer;
+
+begin
+	a := 3;
+	b := 4;
+	if ((a = b) > ((test > 0) <= (b <> a))) then
+		write('Success')
+	else
+		write('Error');
+
+end.

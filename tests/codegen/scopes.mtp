@@ -1,0 +1,21 @@
+var a, b : integer;
+
+begin
+	a := 100;
+	b := 2222;
+	write(a);
+
+	var a : integer;
+	begin
+		a := 2;
+		write(a);
+		begin
+			write(a);
+			write(b);
+		end;
+	end;
+
+	write(a);
+
+
+end.

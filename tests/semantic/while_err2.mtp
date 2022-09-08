@@ -1,0 +1,7 @@
+const true := 1;
+var a : integer;
+begin
+	while (true) do
+	      a := a + 1;
+
+end.

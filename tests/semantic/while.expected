@@ -1,0 +1,59 @@
+
+Semantically Corrected AST
+[Head] (Block, Block Statement) 
+Symbol Table:============================================================================:
+Identifiers    |Stack Offset  |Type                 |Value                           
+-----------------------------------------------------------------------------------------
+a              |0             |Int, Var             |                                
+b              |4             |Int, Var             |                                
+test           |NONE          |Int, Con             |1                               
+=======================================================================Depth 0   :Size 8   
+    [Child] (Const Section) 
+        [Child] (Const Declaration) 
+            [Child] 2, TOK_ID, test, (Literal) 
+            [Child] 2, TOK_NUM, 1, (Literal) 
+    [Child] (Variable Section) 
+        [Child] (Variable Declaration, Variable List) 
+            [Child] 3, TOK_ID, a, (Literal) 
+            [Sibling] 3, TOK_ID, b, (Literal) 
+            [Child] 3, TOK_KEY_INTEGER, integer, (Type, Integer) 
+    [Child] (Statement List) 
+        [Child] (While Statement) 
+            [Child] 7, TOK_GREATER, >, (Condition, Expression, Relational Operator) 
+                [Child] 7, TOK_ID, a, (Variable) 
+                [Child] 7, TOK_ID, b, (Variable) 
+            [Child] (Assign Statement) 
+                [Child] 8, TOK_ID, a, (Variable) 
+                [Child] 8, TOK_PLUS, +, (Simple Expression, Binary Adding Operator) 
+                    [Child] 8, TOK_ID, a, (Variable) 
+                    [Child] 8, TOK_NUM, 1, (Constant, Integer) 
+        [Sibling] (While Statement) 
+            [Child] 10, TOK_LESS, <, (Condition, Expression, Relational Operator) 
+                [Child] 10, TOK_ID, test, (Constant, Integer) 
+                [Child] 10, TOK_ID, b, (Variable) 
+            [Child] (Assign Statement) 
+                [Child] 11, TOK_ID, b, (Variable) 
+                [Child] 11, TOK_STAR, *, (Multiply Operator, Term) 
+                    [Child] 11, TOK_ID, a, (Variable) 
+                    [Child] 11, TOK_ID, test, (Constant, Integer) 
+        [Sibling] (While Statement) 
+            [Child] 13, TOK_NOTEQ, <>, (Condition, Expression, Relational Operator) 
+                [Child] 13, TOK_ID, test, (Constant, Integer) 
+                [Child] 13, TOK_NUM, 0, (Constant, Integer) 
+            [Child] (Block, Block Statement) 
+Symbol Table:============================================================================:
+Identifiers    |Stack Offset  |Type                 |Value                           
+-----------------------------------------------------------------------------------------
+a              |0             |Int, Var             |                                
+=======================================================================Depth 1   :Size 4   
+                [Child] (Variable Section) 
+                    [Child] (Variable Declaration, Variable List) 
+                        [Child] 14, TOK_ID, a, (Literal) 
+                        [Child] 14, TOK_KEY_INTEGER, integer, (Type, Integer) 
+                [Child] (Statement List) 
+                    [Child] (Assign Statement) 
+                        [Child] 16, TOK_ID, a, (Variable) 
+                        [Child] 16, TOK_PLUS, +, (Simple Expression, Binary Adding Operator) 
+                            [Child] 16, TOK_ID, a, (Variable) 
+                            [Child] 16, TOK_ID, test, (Constant, Integer) 
+        [Sibling] (Null Statement) 

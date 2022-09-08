@@ -1,0 +1,7 @@
+(*Testing simple expressions with constant var*)
+const test := 'error';
+var a,b : integer;
+
+begin
+	a := (a = b) > (test <= (b <> a)) 
+end.

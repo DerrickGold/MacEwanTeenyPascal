@@ -1,0 +1,9 @@
+(* variable section start *)
+
+(*missing left parenthesis*)
+var test: array 20) of integer;
+
+begin
+
+end
+.

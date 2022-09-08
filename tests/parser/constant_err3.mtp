@@ -1,0 +1,10 @@
+(* constants *)
+const test :=10;
+floop := 1337;
+(*missing end quote*)
+three := 'Stringify;
+
+begin
+
+end
+.

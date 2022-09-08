@@ -1,0 +1,6 @@
+begin
+	(*nothing after assignment*)
+	(*assignment statement: with terms*)
+	something :=;
+end
+.

@@ -1,0 +1,10 @@
+Syntax Error: line 6:
+Unexpected token (TOK_ID, 'second'), likely missing a(n)  
+  'TOK_KEY_ELSE' or
+  'TOK_KEY_END' or
+Possibly due to malformed or missing:
+  Non-terminal: 'If Statement' or
+  Non-terminal: 'While Statement' or
+  Non-terminal: 'Write Statement' or
+  Non-terminal: 'Read Statement' or
+  Non-terminal: 'Case'

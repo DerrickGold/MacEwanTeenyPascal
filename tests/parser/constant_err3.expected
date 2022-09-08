@@ -1,0 +1,4 @@
+Syntax Error: line 5:
+Unexpected token (TOK_ERROR, 'Unterminated String'), expected a token type of:  
+  'TOK_NUM' or
+  'TOK_STR'

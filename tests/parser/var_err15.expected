@@ -1,0 +1,4 @@
+Syntax Error: line 4:
+Unexpected token (TOK_LPAREN, '('), expected a token type of:  
+  'TOK_KEY_ARRAY' or
+  'TOK_KEY_INTEGER'

@@ -1,0 +1,35 @@
+begin
+
+	(*block statement*)
+	begin
+
+	end;
+
+	(*block statement with const section*)
+	const something := 'two'; 
+	begin
+
+	end;
+	
+	(*block statement with var section*)
+	var identity : integer;
+	begin
+
+	end;
+
+	(*block statement with const + var section*)
+	const something := 'two'; 
+	var identity : integer;
+	begin
+
+	end;
+
+	(*block statement, with a block statement*)
+	begin
+		(*block statement*)
+		begin
+
+		end;
+	end;
+end
+.

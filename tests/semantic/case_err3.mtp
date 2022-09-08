@@ -1,0 +1,16 @@
+(*Try duplicate case values*)
+var a, b : integer;
+
+
+begin
+
+	case a + b of
+	1:
+		a := b
+	;
+	1:
+		b := a
+	end
+
+
+end.

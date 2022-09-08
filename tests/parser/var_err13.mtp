@@ -1,0 +1,9 @@
+(* variable section start *)
+
+(*missing right constant*)
+var test: array() of integer;
+
+begin
+
+end
+.

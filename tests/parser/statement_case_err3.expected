@@ -1,0 +1,6 @@
+Syntax Error: line 4:
+Unexpected token (TOK_ASSIGN, ':='), likely missing a(n)  
+  'TOK_COMMA' or
+  'TOK_COLON' or
+Possibly due to malformed or missing:
+  Non-terminal: 'Variable'

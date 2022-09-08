@@ -1,0 +1,5 @@
+(*Read statement with string constant*)
+const buf := 'error';
+begin
+	read(buf);
+end.

@@ -1,0 +1,8 @@
+(*Try to not a string value*)
+const b := '1';
+var a : integer;
+
+begin
+
+	a := b
+end. 

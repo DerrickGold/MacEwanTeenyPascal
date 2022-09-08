@@ -1,0 +1,5 @@
+(*Read statement with duplicate variable*)
+var a : integer;
+begin
+	read(a, a);
+end.

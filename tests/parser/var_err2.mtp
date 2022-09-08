@@ -1,0 +1,9 @@
+(* variable section start *)
+
+(*missing var section*)
+test : integer;
+
+begin
+
+end
+.

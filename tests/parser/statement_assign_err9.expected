@@ -1,0 +1,6 @@
+Syntax Error: line 4:
+Unexpected token (TOK_STAR, '*'), likely missing a(n)  
+  'TOK_LPAREN' or
+  'TOK_KEY_NOT' or
+Possibly due to malformed or missing:
+  Non-terminal: 'Factor'
